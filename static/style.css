@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.logo h4{
+    color: white;
+    font-size: 25px;
+    padding: 0px 10px;
+    margin-right: 240px;
+}
+#navbar li{
+    list-style: none;
+    
+    transition: all 1s ease-in-out;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 30px;
+    margin: 1px;
+    color: white;
+}
+#navbar li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+#navbar li:hover{
+    transform: scale(1.15);
+}
+
+#introSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 550px;
+    color: rgb(111, 17, 206);
+}
+.image{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 60px;
+    height: 400px;
+    width: 400px;
+    background: url(../static/bg1.jpg) no-repeat center center/cover;
+    
+    transition: all 1s ease-in-out;
+}
+.image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: url(../static/bg.jpg) no-repeat center center/cover;
+}
+#introSection h1{
+    font-size: 3rem;
+
+}
+.tag{
+    font-size: 1.5rem;
+}
+.con{
+    position: absolute;
+    left: 10%;
+    right: 30%;
+    text-align: center;
+}
+#missionSection{
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+#missionSection h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cards div{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 32%;
+    margin: 0.5%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card1{
+    background: url(../static/dp.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in;
+}
+.card1:hover{
+    cursor: pointer;
+    transform: scalex(1.05);
+}
+.card2{
+    background: url(../static/dlike.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in;
+}
+.card2:hover{
+    cursor: pointer;
+    transform: scalex(1.05);
+}
+.card3{
+    background: url(../static/et.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in;
+}
+.card3:hover{
+    cursor: pointer;
+    transform: scalex(1.05);
+}
+.cards p{
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 20px;
+}
+#sponserSection{
+    margin: auto;
+    display: block;
+}
+#sponserSection h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+.sponsers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sponsers img{
+    height: 100px;
+    margin: 15px 20px 40px 10px;
+    padding: 10px;
+}
+#footerSection{
+    background-color: black;
+}
+#footer{
+    
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerSection h2{
+    padding: 40px;
+    text-align: right;
+}
+#footerSection h2 a{
+    text-decoration: none;
+    color: white;
+}

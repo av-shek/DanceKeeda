@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Avi's DanceKeeda
+        block scripts
+        block style 
+    body
+        nav#navbar
+            .logo
+                img(src="../static/logo.png")
+                h4 ADK
+            ul
+                li.item #[a(href='/') Home]
+                li.item #[a(href='/') About]
+                li.item #[a(href='/') Services]
+                li.item #[a(href='/') Class Info]
+                li.item #[a(href='/contact') Contact Us]
+        block content
+        footer#footerSection
+            div#footer © copyright 2020 | www.avidancekeeda.com | All rights reserved.
+            h2 #[a(href='#navbar') Back to top!]
+        script
+            include ../static/index.js

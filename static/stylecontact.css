@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.container{
+    background: url("contact.jpg") no-repeat center center/cover;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items
