@@ -13,6 +13,9 @@ html{
     flex-direction: row;
     background-color: black;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 #navbar ul{
     display: flex;
@@ -96,6 +99,13 @@ html{
     right: 30%;
     text-align: center;
 }
+
+/* .video{
+    position: absolute;
+    right: 50px;
+    border: 2px solid black;
+    border-radius: 4px;
+} */
 #missionSection{
     margin: auto;
     display: block;
@@ -171,14 +181,14 @@ html{
 }
 #footer{
     
-    padding: 50px;
+    padding: 30px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #footerSection h2{
-    padding: 40px;
+    padding: 20px;
     text-align: right;
 }
 #footerSection h2 a{
