@@ -7,6 +7,10 @@ html{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Acme', sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to bottom right, #c448c0, #a0b5e5, #4118e5);
 }
 #navbar{
     display: flex;
@@ -17,6 +21,8 @@ html{
     width: 100%;
     z-index: 5;
 }
+
+
 #navbar ul{
     display: flex;
     flex-direction: row;
@@ -42,7 +48,6 @@ html{
 }
 #navbar li{
     list-style: none;
-    
     transition: all 1s ease-in-out;
 }
 #navbar li a{
@@ -69,7 +74,8 @@ html{
     font-size: 1rem;
     height: 550px;
     color: rgb(111, 17, 206);
-}
+    /* color: lightcyan; */
+} 
 .image{
     color: white;
     text-align: center;
@@ -90,8 +96,19 @@ html{
     font-size: 3rem;
 
 }
+#introSection .line{
+    /* font-size: 3rem; */
+    color: white;
+
+}
+#introSection h1 span{
+    font-size: 3rem;
+    color: red;
+
+}
 .tag{
     font-size: 1.5rem;
+    color: black;
 }
 .con{
     position: absolute;

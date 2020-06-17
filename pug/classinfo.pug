@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+block style
+    style 
+        include ../static/style.css
+        include ../static/styleclassinfo.css
+block content
+    nav#navbar
+            .logo
+                img(src="../static/logo.png")
+                h4 ADK
+            ul
+                li.item #[a(href='/') Home]
+                li.item #[a(href='/service') Services]
+                li.item #[a(href='/classinfo') Class Info]
+                li.item #[a(href='/contact') Contact Us]
+    div#container
+        div.heading Various Classes you can opt for!
+        .details
+            .class
+                h2 Individual
+                article You will be trained individually by an expert trainer. You can continue any form as per your wish. To register, #[a(href='/register') Click here!]
+            .class
+                h2 Group
+                article You will be trained in a group where you will get to know various new techniques from your your classmates or they can learn from you instead. Total 3 trainers will be there for the whole class. To register, #[a(href='/register') Click here!]
+            .class
+                h2 Both
+                article This is the section where most of the fun resides. You will be trained individually as well as in a group. An expert trainer will be assigned to you and a total of 3 trainers will be there for the combined class. To register, #[a(href='/register') Click here!]
+            .class
+                h2 Events-paticular
+                article Some students are only interested in participating various events or competitions. They can register for this class and they will be called only when there is any competition or an event taking place. Total 3 trainers will be there for the whole group if it will be a group event and an individual expert for solo events. To register, #[a(href='/register') Click here!]
+    footer#footerSection
+        div#footer © copyright 2020 | www.avidancekeeda.com | All rights reserved.

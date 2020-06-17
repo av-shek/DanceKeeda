@@ -3,20 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-image: none;
+}
 h1{
     text-align: center;
     margin: 20px;
 }
 #container{
-    background: url('contact.jpg') no-repeat center center/cover;
+    background: url('./static/contact.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 89.4vh;
 }
 .myform{
-    background: url("contact.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

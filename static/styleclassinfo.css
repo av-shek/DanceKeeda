@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(./static/classinfobg.jpg) no-repeat center center/cover;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 89.4vh;
+}
+.heading{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    background-image: linear-gradient(to bottom right, #c448c0, #a0b5e5, #4118e5);
+}
+#container .details{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 40px;
+}
+#container .details .class{
+    padding: 30px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+    transition: 0.5s ease-in;
+    background-color: #d7f381;
+}
+#container .details .class h2{
+    text-align: center;
+}
+#container .details article{
+    text-align: justify;
+}
+#container .details .class:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px tomato;
+    background-color: thistle;
+    color: indigo;
+}
+#container .details article a{
+    color: red;
+    text-decoration: none;
+}
+

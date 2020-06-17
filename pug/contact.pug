@@ -7,6 +7,15 @@ block style
         include ../static/style.css
         include ../static/stylecontact.css
 block content
+    nav#navbar
+            .logo
+                img(src="../static/logo.png")
+                h4 ADK
+            ul
+                li.item #[a(href='/') Home]
+                li.item #[a(href='/service') Services]
+                li.item #[a(href='/classinfo') Class Info]
+                li.item #[a(href='/contact') Contact Us]
     div#container
         h1 Fill the form to Contact Us
         form(action="/contact", method="post", class="myform")
@@ -19,4 +28,3 @@ block content
                 | SUBMIT
     footer#footerSection
         div#footer © copyright 2020 | www.avidancekeeda.com | All rights reserved.
-        h2 #[a(href='#container') Back to top!]

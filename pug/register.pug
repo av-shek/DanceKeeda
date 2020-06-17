@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+block style
+    style 
+        include ../static/style.css
+        include ../static/stylecontact.css
+        include ../static/styleregister.css
+block content
+    div#container
+        h1 Register yourself and get started!!
+        form(action="/register", method="post", class="myform")
+            h2 Name:
+            input(type="text", class="myinput", name="name", placeholder="Enter your name")
+            h2 Mobile:
+            input(type="phone", class="myinput", name="phone", placeholder="Enter your phone")
+            h2 Email:
+            input(type="email", class="myinput", name="email", placeholder="Enter your email")
+            h2 Address:
+            input(type="text", class="myinput", name="address", placeholder="Enter your address")
+            h2 Choose your class:
+            select(name="class", class="myinput")
+                option(value="individual") Individual
+                option(value="Group") Group
+                option(value="Both") Both
+                option(value="Event") Event-paticular
+            
+            button(class="btn")
+                | SUBMIT
+    footer#footerSection
+        div#footer © copyright 2020 | www.avidancekeeda.com | All rights reserved.
+        h2 #[a(href='#container') Back to top!]
